@@ -1,0 +1,80 @@
+/* Navbar dark/blue professional theme */
+.navbar {
+  background: linear-gradient(135deg, #1e3a8a 0%, #0ea5e9 100%) !important; /* dark navy to cyan */
+  backdrop-filter: blur(8px);
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Ensure the navbar stays on top */
+.glass-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1050;
+}
+
+.navbar .navbar-brand {
+  font-weight: 700;
+  color: #e0f2ff !important;
+}
+
+.navbar .nav-link {
+  color: #e0f2ff;
+  font-weight: 500;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.navbar .nav-link:hover {
+  color: #fff;
+  background-color: rgba(255,255,255,0.08);
+}
+
+.navbar .nav-link.active {
+  color: #ffdd57;
+  background-color: rgba(255,255,255,0.12);
+  border-radius: 4px;
+}
+
+.dropdown-menu {
+  background-color: #1e293b;
+  border: none;
+}
+
+.dropdown-item {
+  color: #e0f2ff;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+/* Admin Panel button hover animation */
+.admin-btn {
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.admin-btn:hover {
+  background-color: #2563eb; /* slightly darker primary */
+  transform: translateY(-1px);
+}
+
+/* Custom Admin Panel button styling */
+.admin-panel-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px;
+  background: #1a1a1a;
+  color: #f59e0b;
+  border: 1px solid #f59e0b;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background 0.2s, color 0.2s;
+}
+.admin-panel-btn:hover {
+  background: #333;
+}
